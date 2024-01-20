@@ -8,23 +8,21 @@
     </ul>
 </nav>
 }@else {
-
-<img id="logo" src="./assets/img/logo_weiss.png" alt="logo">
+    <nav id="mobileNav">
+<img id="logo" src="./assets/img/logo_weiss.png" alt="Loki Lingo">
 <img id="burger-menu" (click)="openNav()" src='{{ "./assets/img/" + symbol + ".png" }}'>
 
-}
-
-<h1> {{ this.screenService.screenWidth() }}</h1>
-
-
-
 @if (navIsOpen){
-<nav id="mobileNav">
-    <img src="./assets/img/logo_blau.png" alt="logo">
+
+    <img src="./assets/img/logo_blau.png" alt="Loki Lingo">
     <ul>
-        <li> <a (click)="closeImpressum(); openNav()" href="#about-me-container">About me</a></li>
+        <li><a (click)="closeImpressum(); openNav()" href="#about-me-container">About me</a></li>
         <li><a (click)="closeImpressum(); openNav()" href="#skills-container">Skills set</a></li>
         <li><a (click)="closeImpressum(); openNav()" href="#work">My work</a></li>
     </ul>
+
+}
 </nav>
 }
+
+<h1> {{ this.screenService.screenWidth() }}</h1>

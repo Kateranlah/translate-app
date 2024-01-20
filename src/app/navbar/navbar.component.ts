@@ -32,7 +32,7 @@ export class NavbarComponent {
       this.navIsOpen = true;
       this.navIsClose = false;
       /* this.appComponent.activateScroll() */
-      this.symbol = "close";
+      this.symbol = "x";
     }
   }
 
