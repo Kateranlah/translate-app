@@ -10,6 +10,7 @@ import { ScreenwidthServiceService } from "../../shared/services/screenwidth.ser
 })
 export class NavbarComponent {
   public navIsOpen = false;
+  screenWidth = this.screenService.screenWidth()
   navIsClose = true;
   slideIn = false;
   symbol = "burger-menu";
@@ -17,7 +18,6 @@ export class NavbarComponent {
   constructor(public screenService: ScreenwidthServiceService) {}
 
   ngOnInit() {
-    console.log(this.screenService.getScreenWidth());
   }
 
   openNav() {
@@ -38,5 +38,6 @@ export class NavbarComponent {
 
   closeImpressum() {
     /*  this.appComponent.closeImpressum() */
+  
   }
 }
