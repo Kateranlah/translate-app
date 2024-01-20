@@ -1,0 +1,111 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 47px 69px 47px 128px;
+    font-size: 32px;
+  
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+    }
+  
+    li {
+      list-style: none;
+      margin-inline: 32px;
+      width: 170px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #5988ff;
+      z-index: 10;
+  
+      &:hover {
+        font-weight: 900;
+        padding-inline: 0px;
+      }
+    }
+  }
+  
+  .slideIn {
+    animation: navSlideIn 0.255s;
+  }
+  
+  slideOut {
+    animation: navSlideOut 0.255s;
+  }
+  
+  #mobileNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.934);
+    justify-content: center;
+    z-index: 10;
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  
+    li {
+      list-style: none;
+      margin: 32px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #5988ff;
+  
+      &:hover {
+        font-weight: 900;
+        padding-inline: 0px;
+      }
+    }
+  
+    img {
+      height: 69px;
+      width: 64px;
+      position: absolute;
+      top: 37px;
+      left: 25px;
+    }
+  }
+  
+  @keyframes navSlideIn {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  #logo {
+    height: 69px;
+    width: 64px;
+    position: absolute;
+    top: 37px;
+    left: 25px;
+  }
+  
+  #burger-menu {
+    position: absolute;
+    top: 57px;
+    right: 25px;
+    z-index: 99;
+    cursor: pointer;
+  }
