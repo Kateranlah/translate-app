@@ -9,12 +9,12 @@
 </nav>
 }@else {
     <nav id="mobileNav">
-<img id="logo" src="./assets/img/logo_weiss.png" alt="Loki Lingo">
+<img id="logo" src="./assets/img/logo_weiss.png" alt="Loqui Lingo">
 <img id="burger-menu" (click)="openNav()" src='{{ "./assets/img/" + symbol + ".png" }}'>
 
 @if (navIsOpen){
 
-    <img src="./assets/img/logo_blau.png" alt="Loki Lingo">
+    <img src="./assets/img/logo_blau.png" alt="Loqui Lingo">
     <ul>
         <li><a (click)="closeImpressum(); openNav()" href="#about-me-container">About me</a></li>
         <li><a (click)="closeImpressum(); openNav()" href="#skills-container">Skills set</a></li>
