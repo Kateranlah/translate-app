@@ -8,21 +8,19 @@
     </ul>
 </nav>
 }@else {
-    <nav id="mobileNav">
+    
 <img id="logo" src="./assets/img/logo_weiss.png" alt="Loqui Lingo">
 <img id="burger-menu" (click)="openNav()" src='{{ "./assets/img/" + symbol + ".png" }}'>
 
 @if (navIsOpen){
-
+    <nav id="mobileNav">
     <img src="./assets/img/logo_blau.png" alt="Loqui Lingo">
-    <ul>
+    <ul class="slideIn">
         <li><a (click)="closeImpressum(); openNav()" href="#about-me-container">About me</a></li>
         <li><a (click)="closeImpressum(); openNav()" href="#skills-container">Skills set</a></li>
         <li><a (click)="closeImpressum(); openNav()" href="#work">My work</a></li>
     </ul>
-
-}
 </nav>
 }
 
-<h1> {{ this.screenService.screenWidth() }}</h1>
+}

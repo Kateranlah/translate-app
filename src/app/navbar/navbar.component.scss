@@ -84,14 +84,6 @@ slideOut {
     left: 25px;
   }
 
-  #burger-menu {
-    position: absolute;
-    top: 57px;
-    right: 25px;
-    left: unset;
-    z-index: 99;
-    cursor: pointer;
-  }
 }
 
 @keyframes navSlideIn {
@@ -110,4 +102,15 @@ slideOut {
   position: absolute;
   top: 37px;
   left: 25px;
+}
+
+#burger-menu {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 57px;
+  right: 25px;
+  left: unset;
+  z-index: 99;
+  cursor: pointer;
 }

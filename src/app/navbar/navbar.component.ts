@@ -9,7 +9,7 @@ import { ScreenwidthServiceService } from "../../shared/services/screenwidth.ser
   styleUrl: "./navbar.component.scss",
 })
 export class NavbarComponent {
-  public navIsOpen = false;
+  navIsOpen = false;
   screenWidth = this.screenService.screenWidth()
   navIsClose = true;
   slideIn = false;
