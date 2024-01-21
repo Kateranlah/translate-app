@@ -1,12 +1,17 @@
 import { Component } from "@angular/core";
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+
 import { ScreenwidthServiceService } from "../../shared/services/screenwidth.service.service";
 
 @Component({
   selector: "app-navbar",
   standalone: true,
-  imports: [],
+  imports: [MatButtonModule, MatToolbarModule, MatIconModule, MatMenuModule],
   templateUrl: "./navbar.component.html",
-  styleUrl: "./navbar.component.scss",
+  styleUrl: "./navbar.component.scss", 
 })
 export class NavbarComponent {
   navIsOpen = false;
